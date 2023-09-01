@@ -1,0 +1,97 @@
+body {
+    height: 500px;
+    margin: 0;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: lightblue;
+  }
+  
+  .access-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .arrow,
+  .acess {
+    height: 1em;
+    align-self: center;
+  }
+  .arrow:hover {
+    transition: transform 0.1s ease-in;
+    transform: scale(1.5)
+  }
+  
+  .item-list {
+    display: none;
+    grid-column: span 2;
+    text-align: center;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    top: 2.7em;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    overflow: hidden;
+    max-height: 200px;
+    transition: max-height 0.3 ease;
+  }
+  
+  .li {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 15em;
+  }
+
+  .img {
+    margin: 0 7em 0 7em;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    grid-row: 1;
+    transition: transform 0.5s ease-in 1s; /* Propriedade de transição */
+  }
+  
+
+  #center-div {
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+  }
+
+  .left:hover {
+    transition: transform 0.1s ease-in;
+    transform: scale(1.5)
+  }
+  
+  .right:hover {
+    transition: transform 0.1s ease-in;
+    transform: scale(1.5)
+  }
+
+  .arrows-div {
+    grid-column: 2;
+    display: flex;
+    margin: 2em 7em; /* Margem em cima e embaixo para separar dos elementos acima e abaixo */
+    width: 173px;
+    justify-content: space-between;
+    align-self: start; /* Alinha o div no início do grid (cima) */
+  }
+  
+  
+  
